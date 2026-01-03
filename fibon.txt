@@ -1,0 +1,58 @@
+num = int(input("enter the number"))
+a,b = 0,1
+
+for _ in range(num):
+    print(a,end=",")
+    a,b = b,a+b
+    
+
+'''Detailed Walkthrough with Values Updated:
+
+Start with a = 0 and b = 1:
+First iteration (a = 0, b = 1):
+
+We print a, which is 0.
+Then, we update a and b using the statement a, b = b, a + b:
+
+a = b → a = 1 (the second Fibonacci number).
+b = a + b → b = 0 + 1 = 1 (the third Fibonacci number).
+So now:
+a = 1
+b = 1
+
+Second iteration (a = 1, b = 1):
+We print a, which is 1.
+We update a and b again:
+a = b → a = 1 (the third Fibonacci number).
+b = a + b → b = 1 + 1 = 2 (the fourth Fibonacci number).
+So now:
+a = 1
+b = 2
+
+Third iteration (a = 1, b = 2):
+We print a, which is 1.
+We update a and b again:
+a = b → a = 2 (the fourth Fibonacci number).
+b = a + b → b = 1 + 2 = 3 (the fifth Fibonacci number).
+So now:
+a = 2
+b = 3
+
+
+Fourth iteration (a = 2, b = 3):
+We print a, which is 2.
+We update a and b again:
+a = b → a = 3 (the fifth Fibonacci number).
+b = a + b → b = 2 + 3 = 5 (the sixth Fibonacci number).
+So now:
+a = 3
+b = 5
+
+Fifth iteration (a = 3, b = 5):
+We print a, which is 3.
+We update a and b again:
+a = b → a = 5 (the sixth Fibonacci number).
+b = a + b → b = 3 + 5 = 8 (the seventh Fibonacci number).
+So now:
+a = 5
+b = 8'''

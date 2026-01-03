@@ -1,0 +1,7 @@
+2,6,48,8,9,23,22,74,98,100
+
+help(print)
+#useful
+print(*args, sep=' ', end='\n', file=None, flush=False)
+    Prints the values to a stream, or to sys.stdout by default.
+    sep
